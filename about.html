@@ -5,35 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me </title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- FONTS: Kantumruy Pro and Playfair Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    
+    
 </head>
 
+<!--
 <style>
 
+    div{
+            margin: 30px;
+            border-style: groove;   
+    }
+
+    /* --- STYLE PAGE --- */
     body{
-        background-color: beige;
+        background-color: white
     }
 
     h1{
-        color: brown;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color: black;
+       text-align: center;
+       font-family: 'Playfair Display', serif;
+       font-size: 40px;
     }
 
-    p{
+    main{
+        text-align: center;
+    }
+
+    /* --- END STYLE PAGE --- */
+
+
+    /* --- STYLE MENU --- */
+    nav{
+        text-align: center;
+        font-family: 'Kantumruy Pro', sans-serif;
+        
+    }
+
+    ul{ /* Sacamos el "estilo" de la lista por defecto (los puntos). OJO: se la estamos sacando a TODAS las listas*/
+        list-style: none;
+        
+    }
+
+    #menu li>a{
+        text-align: center;
+
+        background-color: #353434;
+        color: white;
+        padding: 10px;
+        display:block;
+        text-decoration: none;
+        min-width: 150px;
+    }
+    #menu li>a:hover{
+        color: black;
+        background-color: #eaeaea;
+    }
+    #menu>li{
+
+        float: left;
+        text-align: center;
+
+    }
+
+    #menu>li>ul{ /* Indicamos que la ul que se encuentra en un li, no se muestre, para luego mostrarla al pasar el cursor */
+        display: none;
+    }
+
+    #menu>li:hover>ul { /*Acá mostramos la ul */
+        display:block;
+    }
+
+    /* --- END STYLE MENU --- */
+
+    p {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    
+    .img_aboutme {
+        height:500px
+    }
+    img {
+
+        width: auto; 
+        max-height: 100%; 
+    }
+
 
 
 </style>
+-->
+
+
 <body>
+    <div><h1> Jesica Ostoich </h1></div> 
+    
+    <header>
+        <!-- PRINCIPAL NAVEGATION (MENU) -->
+            
+                <nav>
+                    <ul id="menu">
+        
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                        <li> <a href="contact.html">Contact</a> </li>
+                        <li> <a href="github.html">Github</a> </li>
+                        <li> <a href="prescriptions.html">Prescriptions</a>
+                            <ul>
+                                <li><a href=""> Lunch </a> </li>
+                                <li><a href=""> Dinner </a></li>
+                                <li><a href=""> Healthy </a> </li>
+                                
+                            </ul> 
+                        </li>
+                    </ul>
+        
+                 </nav>
+        
+    </header>
+    <br>
+    <br>
+    <br>
 
-    <h1> About me </h1>
+    <main>
+        <div>
+            <p> 
+                Hi! My name is Jesica Ostoich and this is my first page using html. Im really very excited for this
+            </p>
+        </div>
 
-    <p> 
-        Hi! My name is Jesica Ostoich and this is my first page using html. Im very excited for this
-    </p>
+        <div class="img_aboutme">
+            <img src="media/aboutme1.jpg" alt="It's me!"> 
+        </div>
+    </main>
 
-    <img src="media/IMG-profile.jpg" alt="It's me!"> 
+    
+    
+    
+
+    
     
 </body>
+<footer> <span>&copy; Copyright Jesica Ostoich 2022 </span></footer>
 </html>

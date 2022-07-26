@@ -1,0 +1,107 @@
+*{ /*ACA PONEMOS TODO DE CERO*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div{  /*     BORDES     */
+        
+        border-style: solid;   
+}
+
+/* --- STYLE PAGE --- */
+body{
+
+    width: auto;
+    height: auto;
+    
+    background-color: white;
+    border-style: solid;
+
+    font-family: 'Kantumruy Pro', sans-serif;
+    /*background-image: url(https://media0.giphy.com/media/L8K62iTDkzGX6/giphy.gif);*/
+}
+
+.subtitle {
+
+    display: block;
+}
+
+header {
+
+    border-style: groove;
+}
+
+
+h1{
+   color: black;
+   text-align: center;
+   font-family: 'Playfair Display', serif;
+   font-size: 40px;
+
+   /*     BORDES     */
+   border-style: groove;
+   margin: 30px;
+}
+
+main{
+    border-style: solid;
+    
+    text-align: center;
+}
+
+/* --- END STYLE PAGE --- */
+
+
+
+
+
+
+/*-------------------STYLE MENU PRINCIPAL-------------------*/
+nav{
+    width: 900px;
+    height: 50px;
+    text-align: auto;
+    font-family: 'Kantumruy Pro', sans-serif;
+    
+}
+
+ul{  /*Sacamos el "estilo" de la lista por defecto (los puntos). OJO: se la estamos sacando a TODAS las listas*/
+    list-style: none;
+    
+}
+
+
+#menu li>a{
+    text-align: center;
+
+    background-color: #353434;
+    color: white;
+    padding: 10px;
+    display:block;
+    text-decoration: none;
+    min-width: 150px;
+}
+
+#menu li>a:hover{
+    color: black;
+    background-color: #eaeaea;
+    transition: 800ms;
+} 
+
+#menu>li{
+    float: left;
+    text-align: center;
+}
+
+#menu>li>ul{ /* Indicamos que la ul que se encuentra en un li, no se muestre, para luego mostrarla al pasar el cursor */
+    display: none;
+}
+
+#menu>li:hover>ul { /*Acá mostramos la ul */
+    display:block;
+}
+
+
+
+/* --- END STYLE MENU --- */
